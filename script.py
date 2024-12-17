@@ -5,9 +5,8 @@ import json
 # Set the search keyword
 keyword = input("Enter a keyword to search vulnerabilities: ").strip()
 
-
 def main():
-    page = 0  # Definir page dentro da função main()
+    page = 0 
     try:
         while (page < 1):
             # Set the URL based on the page number
