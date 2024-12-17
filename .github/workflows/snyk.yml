@@ -2,7 +2,7 @@ name: Security Snyk Workflow
 on:
   push:
     branches: 
-      - '**' 
+      - 'master' 
   pull_request:
     branches: 
       - '**'  
