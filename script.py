@@ -8,7 +8,7 @@ keyword = input("Enter a keyword to search vulnerabilities: ").strip()
 def main():
     page = 0 
     try:
-        while (page < 1):
+        while true:
             # Set the URL based on the page number
             if page == 0:
                 url = f"https://security.snyk.io/vuln?search={keyword}"
