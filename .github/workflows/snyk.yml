@@ -9,5 +9,5 @@ jobs:
       - name: Set up Snyk
         uses: snyk/actions@0.4.0
         with:
-          token: ${{ secrets.SNYK_TOKEN }}
+          token: SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           args: test
