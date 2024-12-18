@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - run: pip install -r requirements.txt
+      - name: Debug Python environment
+        run: |
+          python --version
+          pip --version
+          pip list
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python@master
         continue-on-error: true
