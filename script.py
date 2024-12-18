@@ -5,7 +5,6 @@ import json
 # Set the search keyword
 keyword = input("Enter a keyword to search vulnerabilities: ").strip()
 
-api_key = "sduyfsgfsy666u8"
 def main():
     page = 1 
     try:
