@@ -6,11 +6,11 @@ import json
 keyword = input("Enter a keyword to search vulnerabilities: ").strip()
 
 def main():
-    page = 0 
+    page = 1 
     try:
         while True:
             # Set the URL based on the page number
-            if page == 0:
+            if page == 1:
                 url = f"https://security.snyk.io/vuln?search={keyword}"
             else:
                 url = f"https://security.snyk.io/vuln/{page}?search={keyword}"
