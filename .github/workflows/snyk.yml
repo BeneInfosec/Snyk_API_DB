@@ -14,7 +14,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.11'  # Altere para a versão do Python do seu projeto
+          python-version: '3.11.1'  # Altere para a versão do Python do seu projeto
       - run: pip install -r requirements.txt
       - name: Debug Python environment
         run: |
