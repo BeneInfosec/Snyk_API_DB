@@ -15,7 +15,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@master
-      - name: Run Snyk to test for vulnerabilities
+      - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python@master
         continue-on-error: true
         env:
@@ -23,7 +23,7 @@ jobs:
         with:
           command: test
           args: --sarif-file-output=snyk.sarif
-      - name: Run Snyk to monitor for vulnerabilities
+      - name: Run Snyk monitor to monitor the project
         uses: snyk/actions/python@master
         continue-on-error: true
         env:
