@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.11.1'  # Altere para a versão do Python do seu projeto
-      - run: pip install -r requirements.txt --skip-unresolved
+      - run: pip install beautifulsoup4 requests
       - name: Debug Python environment
         run: |
           python --version
