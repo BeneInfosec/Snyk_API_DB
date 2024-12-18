@@ -9,10 +9,6 @@ on:
 jobs:
   security:
     runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-      actions: read
-      contents: read
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
@@ -21,6 +17,8 @@ jobs:
           python-version: '3.11.1'  # Replace with the Python version your project uses
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Debug installed packages
+        run: pip list
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python@master
