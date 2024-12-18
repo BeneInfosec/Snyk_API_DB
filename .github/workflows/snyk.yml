@@ -5,7 +5,10 @@ on:
       - 'main' 
   pull_request:
     branches: 
-      - '**'  
+      - '**'
+permissions:
+  contents: write
+  security-events: write
 jobs:
   security:
     runs-on: ubuntu-latest
